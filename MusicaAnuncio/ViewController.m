@@ -30,9 +30,13 @@
 }
 
 
+
 - (IBAction)player:(id)sender {
     
-    NSString *nombre = [[NSString alloc] initWithFormat:@"musica"]; NSString *tipo = [[NSBundle mainBundle] pathForResource:nombre ofType:@"mp3"]; reproducir=[[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath: tipo] error:NULL]; [reproducir play];
+    NSString *nombre = [[NSString alloc] initWithFormat:@"musica"];
+    NSString *tipo = [[NSBundle mainBundle] pathForResource:nombre ofType:@"mp3"];
+    reproducir=[[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath: tipo] error:NULL];
+    [reproducir play];
     
 }
 @end
